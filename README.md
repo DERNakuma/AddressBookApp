@@ -1,5 +1,48 @@
 # 📒 Address Book API
 
+🚀 Branches and Their Functionalities
+🔹 UC1 - Model & DTO
+    -created models and Data Transfer Objects (DTOs) for the application.
+🔹 UC2 - Service & Controller
+    -Implemented service and controller layers for handling requests.
+🔹 UC3 - Database Connection
+    -Established a connection between the application and the database.
+🔹 UC4 - Logger
+    -Integrated logging functionality to track application activities.
+🔹 UC5 - DEV/STAG/PROD Configurations
+    -Configured environment-based settings for development, staging, and production.
+🔹 UC6 - Validation
+    -Added data validation using annotations like @Valid to ensure data integrity.
+🔹 UC7 - Try-Catch Error Handling
+    -Implemented error handling mechanisms to catch and manage exceptions.
+🔹 UC8 - Friendly Error Messages
+    -Enhanced error messages for better user understanding.
+🔹 UC9 - Swagger Documentation
+    -Integrated Swagger for API documentation and easy API testing.
+🔹 UC10 - User Registration
+    -Implemented user registration functionality.
+🔹 UC11 - User Login
+    -Developed login functionality with JWT authentication.
+🔹 UC12 - Forget & Reset Password
+    -Implemented password reset and forget password features.
+🔹 UC13 - Bearer Token Authentication
+    -Integrated Bearer token authentication for secured API access.
+🔹 UC14 - Redis Cache Implementation  
+    -Configured Redis caching to improve performance.
+🔹 UC15 - RabbitMQ Integration
+    -Integrated RabbitMQ for message queuing and asynchronous processing.
+🔹 UC16 - JUnit Testing
+    -Implemented unit testing with JUnit and Mockito for API testing.
+🔹 UC17 - User Profile Management
+    -Added user profile update and retrieval functionality.
+🔹 UC18 - User Logout
+    -Implemented user logout functionality with token invalidation.
+🔹 UC19 - Login & Register Frontend
+    -Developed frontend components for login and registration.
+🔹 UC20 - CRUD Operations for Frontend
+    -Implemented CRUD functionalities on the frontend for managing contacts.
+
+
 ## 📝 Overview
 The Address Book API is a Spring Boot-based application designed to securely manage contacts with user authentication, JWT-based security, and CRUD operations. It follows RESTful principles and includes Swagger documentation for easy API exploration.
 
@@ -29,46 +72,3 @@ The Address Book API is a Spring Boot-based application designed to securely man
 - RabbitMQ for message queuing
 - Unit & integration testing with JUnit & Mockito
 - API documentation with Swagger
-
-## 🌐 API Endpoints
-
-### 🔑 Authentication & User Management
-| Method | Endpoint | Description | Access |
-|--------|-------------|-------------|--------|
-| **POST** | `/auth/register` | Register a new user | Public |
-| **POST** | `/auth/login` | Login & receive JWT token | Public |
-| **GET** | `/auth/verify` | Verify email via token | Public |
-| **POST** | `/auth/forget-password` | Request password reset | Public |
-| **POST** | `/auth/reset-password` | Reset password using token | Public |
-| **POST** | `/auth/logout` | Logout and invalidate JWT token | Private |
-
-### 📖 Address Book APIs
-| Method | Endpoint | Description | Access |
-|--------|-------------|-------------|--------|
-| **POST** | `/addressbook/add` | Add a new contact | Private |
-| **GET** | `/addressbook/get` | Retrieve all contacts (Cached) | Private |
-| **GET** | `/addressbook/get/{id}` | Retrieve a contact by ID (Cached) | Private |
-| **PUT** | `/addressbook/update/{id}` | Update a contact by ID | Private |
-| **DELETE** | `/addressbook/delete/{id}` | Delete a contact by ID | Private |
-
-## ⚡ Redis Caching
-This application leverages **Redis** to cache contact data, reducing database load and improving performance.
-
-### 🛠️ Redis Configuration (application.properties)
-```properties
-spring.cache.type=redis
-spring.redis.host=localhost
-spring.redis.port=6379
-```
-
-## 📌 API Documentation
-Explore the API using **Swagger UI**:
-🔗 [Swagger UI](http://localhost:8080/swagger-ui.html)
-
-## 📬 RabbitMQ Integration
-The project utilizes **RabbitMQ** for background task processing. You can access the RabbitMQ dashboard at:
-🔗 [RabbitMQ Management](http://localhost:15672)
-
----
-🚀 **Get started today and build secure, scalable, and efficient contact management solutions!**
-
