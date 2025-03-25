@@ -41,7 +41,7 @@
 🔹 UC13 : Bearer Token Authentication
     -Integrated Bearer token authentication for secured API access.
     
-🔹 UC14 : Redis Cache Implementation  
+🔹 UC14 : Redis Cache Implementation
     -Configured Redis caching to improve performance.
     
 🔹 UC15 : RabbitMQ Integration
